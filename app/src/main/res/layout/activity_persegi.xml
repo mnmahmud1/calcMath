@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+    android:layout_marginVertical="@dimen/activity_vertical_margin"
+    tools:context=".activityPersegi">
+
+
+    <TextView
+        android:id="@+id/labelKeliling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Hitung Keliling"
+        android:textColor="@color/black"
+        android:textSize="12pt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/labelSisiKeliling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelKeliling"
+        android:layout_marginTop="20dp"
+        android:text="Lebar Sisi"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/sisiKeliling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelSisiKeliling"
+        android:hint="example: 2, 3.5, 65"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <TextView
+        android:id="@+id/resultKeliling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sisiKeliling"
+        android:background="@color/light_gray"
+        android:hint="Hasil"
+        android:paddingVertical="5dp"
+        android:paddingLeft="10dp"
+        android:textSize="12pt"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/hitSisiKeliling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultKeliling"
+        android:layout_alignParentEnd="true"
+        android:text="Hitung!" />
+
+    <!-- Luas -->
+
+    <TextView
+        android:id="@+id/labelLuas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hitSisiKeliling"
+        android:layout_marginTop="30dp"
+        android:text="Hitung Luas"
+        android:textColor="@color/black"
+        android:textSize="12pt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/labelSisiLuas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelLuas"
+        android:layout_marginTop="20dp"
+        android:text="Lebar Sisi"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/sisiLuas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelSisiLuas"
+        android:hint="example: 2, 3.5, 65"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/resultLuas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sisiLuas"
+        android:background="@color/light_gray"
+        android:hint="Hasil"
+        android:paddingVertical="5dp"
+        android:paddingLeft="10dp"
+        android:textSize="12pt"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/hitSisiLuas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultLuas"
+        android:layout_alignParentEnd="true"
+        android:text="Hitung!" />
+
+</RelativeLayout>

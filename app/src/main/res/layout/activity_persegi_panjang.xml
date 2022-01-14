@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_marginVertical="@dimen/activity_vertical_margin"
+        tools:context=".activityPersegiPanjang">
+
+        <TextView
+            android:id="@+id/labelKeliling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Hitung Keliling"
+            android:textColor="@color/black"
+            android:textSize="12pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/labelPanjangKeliling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelKeliling"
+            android:layout_marginTop="20dp"
+            android:text="Panjang Sisi"
+            android:textSize="10pt"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/panjangKeliling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelPanjangKeliling"
+            android:hint="example: 2, 3.5, 65"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <TextView
+            android:id="@+id/labelLebarKeliling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/panjangKeliling"
+            android:layout_marginTop="20dp"
+            android:text="Lebar Sisi"
+            android:textSize="10pt"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/lebarKeliling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelLebarKeliling"
+            android:hint="example: 2, 3.5, 65"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <TextView
+            android:id="@+id/resultKeliling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lebarKeliling"
+            android:background="@color/light_gray"
+            android:hint="Hasil"
+            android:paddingVertical="5dp"
+            android:paddingLeft="10dp"
+            android:textSize="12pt"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/hitKeliling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/resultKeliling"
+            android:layout_alignParentEnd="true"
+            android:text="Hitung!" />
+
+        <!-- Luas -->
+
+        <TextView
+            android:id="@+id/labelLuas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hitKeliling"
+            android:layout_marginTop="30dp"
+            android:text="Hitung Luas"
+            android:textColor="@color/black"
+            android:textSize="12pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/labelPanjangLuas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelLuas"
+            android:layout_marginTop="20dp"
+            android:text="Panjang Sisi"
+            android:textSize="10pt"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/panjangLuas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelPanjangLuas"
+            android:hint="example: 2, 3.5, 65"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/labelLebarLuas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/panjangLuas"
+            android:layout_marginTop="20dp"
+            android:text="Lebar Sisi"
+            android:textSize="10pt"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/lebarLuas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelLebarLuas"
+            android:hint="example: 2, 3.5, 65"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <TextView
+            android:id="@+id/resultLuas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lebarLuas"
+            android:background="@color/light_gray"
+            android:hint="Hasil"
+            android:paddingVertical="5dp"
+            android:paddingLeft="10dp"
+            android:textSize="12pt"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/hitLuas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/resultLuas"
+            android:layout_alignParentEnd="true"
+            android:text="Hitung!" />
+
+    </RelativeLayout>
+</ScrollView>

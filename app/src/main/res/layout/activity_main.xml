@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+    android:layout_marginVertical="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Perhitungan Rumus Matematika"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/switchPersegi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textBanner"
+        android:onClick="launchActivityPersegi"
+        android:text="Persegi" />
+
+    <Button
+        android:id="@+id/switchPersegiPanjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switchPersegi"
+        android:onClick="launchActivityPersegiPanjang"
+        android:text="Persegi Panjang" />
+
+    <Button
+        android:id="@+id/switchLingkaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switchPersegiPanjang"
+        android:onClick="lauchActivityLingkaran"
+        android:text="Lingkaran" />
+
+    <Button
+        android:id="@+id/switchSegitiga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switchLingkaran"
+        android:onClick="launchActivitySegitiga"
+        android:text="Segitiga" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:text="Mahmud ~ Yani ~ Pandu" />
+
+</RelativeLayout>
