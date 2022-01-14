@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginVertical="@dimen/activity_vertical_margin"
     android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+    android:layout_marginVertical="@dimen/activity_vertical_margin"
     tools:context=".activitySegitiga">
 
     <TextView
@@ -49,7 +49,7 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/hitSisiKeliling"
+        android:id="@+id/hitKeliling"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/resultKeliling"
@@ -62,7 +62,7 @@
         android:id="@+id/labelLuas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/hitSisiKeliling"
+        android:layout_below="@+id/hitKeliling"
         android:layout_marginTop="30dp"
         android:text="Hitung Luas"
         android:textColor="@color/black"
@@ -70,20 +70,38 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/labelSisiLuas"
+        android:id="@+id/labelAlasLuas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/labelLuas"
         android:layout_marginTop="20dp"
-        android:text="Lebar Sisi"
+        android:text="Luas Alas"
         android:textSize="10pt"
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/sisiLuas"
+        android:id="@+id/alasLuas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/labelSisiLuas"
+        android:layout_below="@+id/labelAlasLuas"
+        android:hint="example: 2, 3.5, 65"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/labelTinggiLuas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alasLuas"
+        android:layout_marginTop="20dp"
+        android:text="Tinggi"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/tinggiLuas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelTinggiLuas"
         android:hint="example: 2, 3.5, 65"
         android:inputType="number" />
 
@@ -91,7 +109,7 @@
         android:id="@+id/resultLuas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/sisiLuas"
+        android:layout_below="@+id/tinggiLuas"
         android:background="@color/light_gray"
         android:hint="Hasil"
         android:paddingVertical="5dp"
@@ -99,9 +117,8 @@
         android:textSize="12pt"
         android:textStyle="bold" />
 
-
     <Button
-        android:id="@+id/hitSisiLuas"
+        android:id="@+id/hitLuas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/resultLuas"
